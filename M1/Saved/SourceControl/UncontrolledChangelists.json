@@ -1,0 +1,38 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Meshes/SM_QuarterCylinder.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Meshes/SM_QuarterCylinder.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Meshes/SM_Cube.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Meshes/SM_Cube.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Materials/MI_PrototypeGrid_Gray.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Materials/MI_PrototypeGrid_Gray.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Materials/MI_PrototypeGrid_TopDark.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Materials/MI_PrototypeGrid_TopDark.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Materials/M_PrototypeGrid.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Materials/MF_ProcGrid.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Textures/T_GridChecker_A.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Meshes/SM_ChamferCube.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Meshes/SM_ChamferCube.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Materials/MI_Solid_Blue.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Materials/M_Solid.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Meshes/SM_Ramp.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Meshes/SM_Ramp.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Asset/LevelPrototyping/Meshes/SM_Cylinder.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Meshes/SM_Cylinder.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Materials/M_Solid.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Materials/MI_Solid_Blue.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Textures/T_GridChecker_A.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Materials/MF_ProcGrid.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/LevelPrototyping/Materials/M_PrototypeGrid.uasset",
+				"G:/Unreal Engine/Projet/TpJules/M1/Content/Project/Character/Ai/Enemy/BP_AiEnemy.uasset"
+			]
+		}
+	]
+}

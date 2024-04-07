@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "g:\\unreal engine\\projet\\tpjules\\m1\\source\\m1\\m1character.cpp",
+        "Source": "g:\\unreal engine\\projet\\tpjules\\m1\\source\\m1\\source\\character\\player\\m1character.cpp",
         "ProvidedModule": "",
         "PCH": "g:\\unreal engine\\projet\\tpjules\\m1\\intermediate\\build\\win64\\x64\\m1editor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
         "Includes": [
             "g:\\unreal engine\\projet\\tpjules\\m1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\m1\\definitions.m1.h",
-            "g:\\unreal engine\\projet\\tpjules\\m1\\source\\m1\\m1character.h",
+            "g:\\unreal engine\\projet\\tpjules\\m1\\source\\m1\\include\\character\\player\\m1character.h",
             "g:\\unreal engine\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
             "g:\\unreal engine\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
             "g:\\unreal engine\\ue_5.3\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",

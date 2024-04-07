@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "g:\\unreal engine\\projet\\tpjules\\m1\\source\\m1\\source\\character\\ai\\enemy\\aienemy.cpp",
+        "ProvidedModule": "",
+        "PCH": "g:\\unreal engine\\projet\\tpjules\\m1\\intermediate\\build\\win64\\x64\\m1editor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "g:\\unreal engine\\projet\\tpjules\\m1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\m1\\definitions.m1.h",
+            "g:\\unreal engine\\projet\\tpjules\\m1\\source\\m1\\include\\character\\ai\\enemy\\aienemy.h",
+            "g:\\unreal engine\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "g:\\unreal engine\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "g:\\unreal engine\\ue_5.3\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "g:\\unreal engine\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "g:\\unreal engine\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "g:\\unreal engine\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "g:\\unreal engine\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "g:\\unreal engine\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "g:\\unreal engine\\projet\\tpjules\\m1\\intermediate\\build\\win64\\unrealeditor\\inc\\m1\\uht\\aienemy.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

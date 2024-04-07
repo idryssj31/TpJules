@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "M1/M1Character.h"
+#include "M1/Include/Character/Player/M1Character.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeM1Character() {}
 // Cross Module References
@@ -68,8 +68,8 @@ void EmptyLinkFunctionForGeneratedCodeM1Character() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AM1Character_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
-		{ "IncludePath", "M1Character.h" },
-		{ "ModuleRelativePath", "M1Character.h" },
+		{ "IncludePath", "Include/Character/Player/M1Character.h" },
+		{ "ModuleRelativePath", "Include/Character/Player/M1Character.h" },
 	};
 #endif
 #if WITH_METADATA
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeM1Character() {}
 		{ "Comment", "/** Camera boom positioning the camera behind the character */" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "M1Character.h" },
+		{ "ModuleRelativePath", "Include/Character/Player/M1Character.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Camera boom positioning the camera behind the character" },
 #endif
@@ -95,7 +95,7 @@ void EmptyLinkFunctionForGeneratedCodeM1Character() {}
 		{ "Comment", "/** Follow camera */" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "M1Character.h" },
+		{ "ModuleRelativePath", "Include/Character/Player/M1Character.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Follow camera" },
 #endif
@@ -109,7 +109,7 @@ void EmptyLinkFunctionForGeneratedCodeM1Character() {}
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** MappingContext */" },
 #endif
-		{ "ModuleRelativePath", "M1Character.h" },
+		{ "ModuleRelativePath", "Include/Character/Player/M1Character.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "MappingContext" },
 #endif
@@ -123,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeM1Character() {}
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Jump Input Action */" },
 #endif
-		{ "ModuleRelativePath", "M1Character.h" },
+		{ "ModuleRelativePath", "Include/Character/Player/M1Character.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Jump Input Action" },
 #endif
@@ -137,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeM1Character() {}
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Move Input Action */" },
 #endif
-		{ "ModuleRelativePath", "M1Character.h" },
+		{ "ModuleRelativePath", "Include/Character/Player/M1Character.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Move Input Action" },
 #endif
@@ -151,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeM1Character() {}
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Look Input Action */" },
 #endif
-		{ "ModuleRelativePath", "M1Character.h" },
+		{ "ModuleRelativePath", "Include/Character/Player/M1Character.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Look Input Action" },
 #endif
@@ -199,15 +199,15 @@ void EmptyLinkFunctionForGeneratedCodeM1Character() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AM1Character);
 	AM1Character::~AM1Character() {}
-	struct Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_M1Character_h_Statics
+	struct Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_Include_Character_Player_M1Character_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_M1Character_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AM1Character, AM1Character::StaticClass, TEXT("AM1Character"), &Z_Registration_Info_UClass_AM1Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AM1Character), 3263655663U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_Include_Character_Player_M1Character_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_AM1Character, AM1Character::StaticClass, TEXT("AM1Character"), &Z_Registration_Info_UClass_AM1Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AM1Character), 3904409036U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_M1Character_h_252186192(TEXT("/Script/M1"),
-		Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_M1Character_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_M1Character_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_Include_Character_Player_M1Character_h_700331305(TEXT("/Script/M1"),
+		Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_Include_Character_Player_M1Character_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_Include_Character_Player_M1Character_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

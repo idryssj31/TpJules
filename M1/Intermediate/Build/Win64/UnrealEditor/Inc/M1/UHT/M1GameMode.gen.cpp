@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "M1/M1GameMode.h"
+#include "M1/Include/GameMode/M1GameMode.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeM1GameMode() {}
 // Cross Module References
@@ -39,8 +39,8 @@ void EmptyLinkFunctionForGeneratedCodeM1GameMode() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AM1GameMode_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering HLOD WorldPartition DataLayers Transformation" },
-		{ "IncludePath", "M1GameMode.h" },
-		{ "ModuleRelativePath", "M1GameMode.h" },
+		{ "IncludePath", "Include/GameMode/M1GameMode.h" },
+		{ "ModuleRelativePath", "Include/GameMode/M1GameMode.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -76,15 +76,15 @@ void EmptyLinkFunctionForGeneratedCodeM1GameMode() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AM1GameMode);
 	AM1GameMode::~AM1GameMode() {}
-	struct Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_M1GameMode_h_Statics
+	struct Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_Include_GameMode_M1GameMode_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_M1GameMode_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AM1GameMode, AM1GameMode::StaticClass, TEXT("AM1GameMode"), &Z_Registration_Info_UClass_AM1GameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AM1GameMode), 881027760U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_Include_GameMode_M1GameMode_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_AM1GameMode, AM1GameMode::StaticClass, TEXT("AM1GameMode"), &Z_Registration_Info_UClass_AM1GameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AM1GameMode), 4234339891U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_M1GameMode_h_1072173143(TEXT("/Script/M1"),
-		Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_M1GameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_M1GameMode_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_Include_GameMode_M1GameMode_h_2480629715(TEXT("/Script/M1"),
+		Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_Include_GameMode_M1GameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projet_TpJules_M1_Source_M1_Include_GameMode_M1GameMode_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

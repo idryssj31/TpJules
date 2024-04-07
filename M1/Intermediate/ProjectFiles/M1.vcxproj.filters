@@ -1473,17 +1473,47 @@
     <ClInclude Include="..\..\Source\M1\M1.h">
       <Filter>Source\M1</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\M1\M1Character.cpp">
-      <Filter>Source\M1</Filter>
+    <Filter Include="Source\M1\Include">
+      <UniqueIdentifier>{905B0250-E5BE-3CAE-A1E6-C0193CCB871F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\M1\Include\Character">
+      <UniqueIdentifier>{CF0CF15B-BA4B-31E4-A6E8-7A468838AFE8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\M1\Include\Character\AiEnemy.cpp">
+      <Filter>Source\M1\Include\Character</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\M1\M1Character.h">
-      <Filter>Source\M1</Filter>
+    <ClInclude Include="..\..\Source\M1\Include\Character\AiEnemy.h">
+      <Filter>Source\M1\Include\Character</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\M1\M1GameMode.cpp">
-      <Filter>Source\M1</Filter>
+    <Filter Include="Source\M1\Include\Character\Player">
+      <UniqueIdentifier>{5A6ED7BF-9F76-3D9B-B1AB-E80367CC6069}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\M1\Include\Character\Player\M1Character.h">
+      <Filter>Source\M1\Include\Character\Player</Filter>
+    </ClInclude>
+    <Filter Include="Source\M1\Include\GameMode">
+      <UniqueIdentifier>{AF052143-C2BD-3908-A021-724E7C4E18C4}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\M1\Include\GameMode\M1GameMode.h">
+      <Filter>Source\M1\Include\GameMode</Filter>
+    </ClInclude>
+    <Filter Include="Source\M1\Source">
+      <UniqueIdentifier>{1D309317-55C7-326F-9031-3908327F052C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\M1\Source\Character">
+      <UniqueIdentifier>{86EE4256-44F8-38AC-94A0-42943B87CFA3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\M1\Source\Character\Player">
+      <UniqueIdentifier>{0EAB2630-F918-3C55-A3C8-16F463BC7609}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\M1\Source\Character\Player\M1Character.cpp">
+      <Filter>Source\M1\Source\Character\Player</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\M1\M1GameMode.h">
-      <Filter>Source\M1</Filter>
-    </ClInclude>
+    <Filter Include="Source\M1\Source\GameMode">
+      <UniqueIdentifier>{6C668A16-8EBD-3275-9D4E-2DCD728CC05E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\M1\Source\GameMode\M1GameMode.cpp">
+      <Filter>Source\M1\Source\GameMode</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

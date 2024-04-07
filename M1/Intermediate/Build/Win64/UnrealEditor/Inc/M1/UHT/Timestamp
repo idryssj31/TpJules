@@ -1,2 +1,3 @@
-G:\Unreal Engine\Projet\TpJules\M1\Source\M1\M1Character.h
-G:\Unreal Engine\Projet\TpJules\M1\Source\M1\M1GameMode.h
+G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\GameMode\M1GameMode.h
+G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\Character\Player\M1Character.h
+G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\Character\AI\Enemy\AiEnemy.h
