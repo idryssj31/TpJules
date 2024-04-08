@@ -69,5 +69,12 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+	
+private:
+
+	class UAIPerceptionStimuliSourceComponent* StimulusSource;
+
+	// Create the stimulus source.
+	void SetupStimulusSource();
 };
 

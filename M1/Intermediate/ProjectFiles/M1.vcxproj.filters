@@ -1479,11 +1479,23 @@
     <Filter Include="Source\M1\Include\Character">
       <UniqueIdentifier>{CF0CF15B-BA4B-31E4-A6E8-7A468838AFE8}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\M1\Include\Character\AiEnemy.cpp">
-      <Filter>Source\M1\Include\Character</Filter>
+    <Filter Include="Source\M1\Include\Character\AI">
+      <UniqueIdentifier>{E4E868BE-FE15-3B58-A87D-6278F5EF2422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\M1\Include\Character\AI\Enemy">
+      <UniqueIdentifier>{C7B893C1-2870-31AD-9D4E-036F081DD608}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\AIC_AiEnemy.h">
+      <Filter>Source\M1\Include\Character\AI\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\AiEnemy.h">
+      <Filter>Source\M1\Include\Character\AI\Enemy</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_ChasePlayer.cpp">
+      <Filter>Source\M1\Include\Character\AI\Enemy</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\M1\Include\Character\AiEnemy.h">
-      <Filter>Source\M1\Include\Character</Filter>
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_ChasePlayer.h">
+      <Filter>Source\M1\Include\Character\AI\Enemy</Filter>
     </ClInclude>
     <Filter Include="Source\M1\Include\Character\Player">
       <UniqueIdentifier>{5A6ED7BF-9F76-3D9B-B1AB-E80367CC6069}</UniqueIdentifier>
@@ -1503,6 +1515,18 @@
     <Filter Include="Source\M1\Source\Character">
       <UniqueIdentifier>{86EE4256-44F8-38AC-94A0-42943B87CFA3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\M1\Source\Character\AI">
+      <UniqueIdentifier>{70CC3D8E-4DF5-373F-B248-6A20C385F084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\M1\Source\Character\AI\Enemy">
+      <UniqueIdentifier>{928EBBA6-13A3-38C7-8E49-12A733AAD04B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\AIC_AiEnemy.cpp">
+      <Filter>Source\M1\Source\Character\AI\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\AiEnemy.cpp">
+      <Filter>Source\M1\Source\Character\AI\Enemy</Filter>
+    </ClCompile>
     <Filter Include="Source\M1\Source\Character\Player">
       <UniqueIdentifier>{0EAB2630-F918-3C55-A3C8-16F463BC7609}</UniqueIdentifier>
     </Filter>
