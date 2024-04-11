@@ -1,6 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "M1/Include/Character/AI/Enemy/BTT_ChasePlayer.h"
 #include "AIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
@@ -18,9 +15,8 @@ EBTNodeResult::Type UBTT_ChasePlayer::ExecuteTask(UBehaviorTreeComponent& OwnerC
 	if(auto* const player = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0))
 	{
 		// get player location to use as vector position.
-		auto const playerlocation = player->GetActorLocation();
-
-		OwnerComp.GetBlackboardComponent()->SetValueAsVector(GetSelectedBlackboardKey(), playerlocation);
+		auto const playerLocation = player->GetActorLocation();
+		OwnerComp.GetBlackboardComponent()->SetValueAsVector(GetSelectedBlackboardKey(), playerLocation);
 		FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
 		return EBTNodeResult::Succeeded;
 	}

@@ -1024,6 +1024,7 @@
     <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\AIC_AiEnemy.h"/>
     <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\AiEnemy.h"/>
     <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_ChasePlayer.h"/>
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_FindRandomLocation.h"/>
     <ClInclude Include="..\..\Source\M1\Include\Character\Player\M1Character.h"/>
     <ClInclude Include="..\..\Source\M1\Include\GameMode\M1GameMode.h"/>
     <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\AIC_AiEnemy.cpp">
@@ -1037,6 +1038,11 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\BTT_ChasePlayer.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_6)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_7)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\BTT_FindRandomLocation.cpp">
       <AssemblerOutput>NoListing</AssemblerOutput>
       <AssemblerListingLocation>G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Unused\</AssemblerListingLocation>
       <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>

@@ -1491,10 +1491,13 @@
     <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\AiEnemy.h">
       <Filter>Source\M1\Include\Character\AI\Enemy</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_ChasePlayer.cpp">
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_ChasePlayer.h">
+      <Filter>Source\M1\Include\Character\AI\Enemy</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_FindRandomLocation.cpp">
       <Filter>Source\M1\Include\Character\AI\Enemy</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_ChasePlayer.h">
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_FindRandomLocation.h">
       <Filter>Source\M1\Include\Character\AI\Enemy</Filter>
     </ClInclude>
     <Filter Include="Source\M1\Include\Character\Player">
@@ -1525,6 +1528,9 @@
       <Filter>Source\M1\Source\Character\AI\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\AiEnemy.cpp">
+      <Filter>Source\M1\Source\Character\AI\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\BTT_ChasePlayer.cpp">
       <Filter>Source\M1\Source\Character\AI\Enemy</Filter>
     </ClCompile>
     <Filter Include="Source\M1\Source\Character\Player">

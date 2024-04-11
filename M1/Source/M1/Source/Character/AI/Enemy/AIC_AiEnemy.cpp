@@ -32,7 +32,7 @@ void AAIC_AiEnemy::SetupSightSystem()
 	if (SightConfig)
 	{
 		SetPerceptionComponent(*CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("Perception Component")));
-		SightConfig->SightRadius = 500.f;
+		SightConfig->SightRadius = 900.f;
 		SightConfig->LoseSightRadius = SightConfig->SightRadius + 20.f;
 		SightConfig->PeripheralVisionAngleDegrees = 90.f;
 		SightConfig->SetMaxAge(5.f);
