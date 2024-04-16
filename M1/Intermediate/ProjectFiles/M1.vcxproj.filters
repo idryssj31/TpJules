@@ -1476,6 +1476,12 @@
     <Filter Include="Source\M1\Include">
       <UniqueIdentifier>{905B0250-E5BE-3CAE-A1E6-C0193CCB871F}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\M1\Include\Gold.cpp">
+      <Filter>Source\M1\Include</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\M1\Include\Gold.h">
+      <Filter>Source\M1\Include</Filter>
+    </ClInclude>
     <Filter Include="Source\M1\Include\Character">
       <UniqueIdentifier>{CF0CF15B-BA4B-31E4-A6E8-7A468838AFE8}</UniqueIdentifier>
     </Filter>
@@ -1491,14 +1497,17 @@
     <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\AiEnemy.h">
       <Filter>Source\M1\Include\Character\AI\Enemy</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_ChasePlayer.h">
-      <Filter>Source\M1\Include\Character\AI\Enemy</Filter>
+    <Filter Include="Source\M1\Include\Character\AI\Enemy\Task">
+      <UniqueIdentifier>{A3D71902-88E9-3776-BEB9-158D91EDFCFD}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\Task\BTT_ChasePlayer.h">
+      <Filter>Source\M1\Include\Character\AI\Enemy\Task</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_FindRandomLocation.cpp">
-      <Filter>Source\M1\Include\Character\AI\Enemy</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_FindRandomLocation.h">
-      <Filter>Source\M1\Include\Character\AI\Enemy</Filter>
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\Task\BTT_FindRandomLocation.h">
+      <Filter>Source\M1\Include\Character\AI\Enemy\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\Task\BTT_GoToGold.h">
+      <Filter>Source\M1\Include\Character\AI\Enemy\Task</Filter>
     </ClInclude>
     <Filter Include="Source\M1\Include\Character\Player">
       <UniqueIdentifier>{5A6ED7BF-9F76-3D9B-B1AB-E80367CC6069}</UniqueIdentifier>
@@ -1530,8 +1539,17 @@
     <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\AiEnemy.cpp">
       <Filter>Source\M1\Source\Character\AI\Enemy</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\BTT_ChasePlayer.cpp">
-      <Filter>Source\M1\Source\Character\AI\Enemy</Filter>
+    <Filter Include="Source\M1\Source\Character\AI\Enemy\Task">
+      <UniqueIdentifier>{7B717C83-3D34-327C-9ADE-56C6C8B2B63E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\Task\BTT_ChasePlayer.cpp">
+      <Filter>Source\M1\Source\Character\AI\Enemy\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\Task\BTT_FindRandomLocation.cpp">
+      <Filter>Source\M1\Source\Character\AI\Enemy\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\Task\BTT_GoToGold.cpp">
+      <Filter>Source\M1\Source\Character\AI\Enemy\Task</Filter>
     </ClCompile>
     <Filter Include="Source\M1\Source\Character\Player">
       <UniqueIdentifier>{0EAB2630-F918-3C55-A3C8-16F463BC7609}</UniqueIdentifier>

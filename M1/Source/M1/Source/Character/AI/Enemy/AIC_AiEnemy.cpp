@@ -3,6 +3,7 @@
 #include "BehaviorTree/BlackboardComponent.h"
 #include "M1/Include/Character/AI/Enemy/AiEnemy.h"
 #include "M1/Include/Character/Player/M1Character.h"
+#include "M1/Include/Interactables/Gold.h"
 #include "Perception/AISenseConfig_Sight.h"
 #include "Perception/AIPerceptionComponent.h"
 
@@ -32,9 +33,9 @@ void AAIC_AiEnemy::SetupSightSystem()
 	if (SightConfig)
 	{
 		SetPerceptionComponent(*CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("Perception Component")));
-		SightConfig->SightRadius = 900.f;
+		SightConfig->SightRadius = 500.f;
 		SightConfig->LoseSightRadius = SightConfig->SightRadius + 20.f;
-		SightConfig->PeripheralVisionAngleDegrees = 90.f;
+		SightConfig->PeripheralVisionAngleDegrees = 45.f;
 		SightConfig->SetMaxAge(5.f);
 		SightConfig->AutoSuccessRangeFromLastSeenLocation = 250.f;
 		SightConfig->DetectionByAffiliation.bDetectEnemies = true;
@@ -55,4 +56,10 @@ void AAIC_AiEnemy::OnTargetDetected(AActor* Actor, FAIStimulus const Stimulus)
 	{
 		GetBlackboardComponent()->SetValueAsBool("CanSeePlayer", Stimulus.WasSuccessfullySensed());
 	}
+	if(auto* gold = Cast<AGold>(Actor))
+	{
+		GetBlackboardComponent()->SetValueAsBool("CanSeeGold", Stimulus.WasSuccessfullySensed());
+		GetBlackboardComponent()->SetValueAsVector("TargetGoldLocation",gold->GetActorLocation());
+	}
+
 }

@@ -327,722 +327,7 @@
     <ClCompile_AdditionalOptions>$(AdditionalOptions) /Yu"$(SolutionDir)Intermediate\Build\Win64\x64\M1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h"</ClCompile_AdditionalOptions>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="..\..\M1.uproject"/>
-    <None Include="..\..\Source\M1.Target.cs"/>
-    <None Include="..\..\Source\M1Editor.Target.cs"/>
-    <None Include="..\..\.vsconfig"/>
-    <None Include="..\..\Config\DefaultEditor.ini"/>
-    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
-    <None Include="..\..\Config\DefaultEngine.ini"/>
-    <None Include="..\..\Config\DefaultGame.ini"/>
-    <None Include="..\..\Config\DefaultInput.ini"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\RD.Build.cs"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\RD.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\RD.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\rd_core_export.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\Lifetime.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\Lifetime.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\LifetimeDefinition.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\LifetimeDefinition.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\LifetimeImpl.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\LifetimeImpl.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\SequentialLifetimes.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\SequentialLifetimes.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\Property.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\ViewableList.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\ViewableMap.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\ViewableSet.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\interfaces.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\IProperty.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\IPropertyBase.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\IViewableList.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\IViewableMap.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\IViewableSet.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\SignalCookie.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\SignalCookie.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\SignalX.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\viewable_collections.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std\allocator.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std\hash.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std\list.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std\to_string.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std\unordered_map.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std\unordered_set.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\types\DateTime.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\types\DateTime.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\types\Void.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\types\wrapper.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\core_traits.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\core_util.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\enum.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\erase_if.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\gen_util.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\overloaded.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\shared_function.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\rd_framework_export.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IProtocol.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IProtocol.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IRdBindable.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IRdDynamic.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IRdReactive.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IRdWireable.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IRdWireable.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\ISerializersOwner.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\ISerializersOwner.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IUnknownInstance.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IUnknownInstance.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IWire.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\RdBindableBase.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\RdBindableBase.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\RdPropertyBase.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\RdReactiveBase.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\RdReactiveBase.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\WireBase.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\WireBase.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\ext\ExtWire.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\ext\ExtWire.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\ext\RdExtBase.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\ext\RdExtBase.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RdList.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RdMap.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RdProperty.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RdSet.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RdSignal.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RName.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RName.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\intern\InternRoot.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\intern\InternRoot.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\intern\InternScheduler.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\intern\InternScheduler.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\Buffer.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\Buffer.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\Identities.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\Identities.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\MessageBroker.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\MessageBroker.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\Protocol.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\Protocol.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\RdId.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\RdId.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\SimpleScheduler.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\SimpleScheduler.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\SingleThreadScheduler.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\SingleThreadScheduler.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\SynchronousScheduler.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\SynchronousScheduler.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\base\IScheduler.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\base\IScheduler.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\base\SingleThreadSchedulerBase.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\base\SingleThreadSchedulerBase.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\AbstractPolymorphic.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\ArraySerializer.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\DefaultAbstractDeclaration.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\DefaultAbstractDeclaration.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\InternedAnySerializer.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\InternedSerializer.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\ISerializable.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\ISerializable.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\NullableSerializer.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\Polymorphic.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\Polymorphic.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\RdAny.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\RdAny.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\SerializationCtx.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\SerializationCtx.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\Serializers.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\Serializers.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\RdCall.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\RdEndpoint.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\RdSymmetricCall.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\RdTask.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\RdTaskImpl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\RdTaskResult.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\WiredRdTask.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\WiredRdTaskImpl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util\framework_traits.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util\guards.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util\hashing.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util\hashing.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util\thread_util.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util\thread_util.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\ByteBufferAsyncProcessor.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\ByteBufferAsyncProcessor.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\PkgInputStream.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\PkgInputStream.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\PumpScheduler.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\PumpScheduler.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\SocketWire.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\SocketWire.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\WireUtil.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\WireUtil.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_gen_cpp\src\RdTextBuffer.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_gen_cpp\src\RdTextBuffer.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\thirdparty.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\thirdparty.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\README"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\ActiveSocket.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\ActiveSocket.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\Host.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\PassiveSocket.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\PassiveSocket.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\SimpleSocket.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\SimpleSocket.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\StatTimer.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\countdownlatch\countdownlatch.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\countdownlatch\countdownlatch.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\countdownlatch\LICENSE"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\countdownlatch\README.md"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\LICENSE"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\README.md"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\include\ctpl_stl.h"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\optional\COPYING"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\optional\README.md"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\optional\tl\optional.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\LICENSE"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\README.md"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\include\tsl\ordered_hash.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\include\tsl\ordered_map.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\include\tsl\ordered_set.h"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\LICENSE"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\README.md"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\ide.cmake"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\pch.h.in"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\spdlog.pc.in"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\spdlogConfig.cmake.in"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\spdlogCPack.cmake"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\utils.cmake"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\version.rc.in"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\async.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\async_logger-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\async_logger.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\common-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\common.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\formatter.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fwd.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\logger-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\logger.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\pattern_formatter-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\pattern_formatter.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\spdlog-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\spdlog.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\stopwatch.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\tweakme.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\version.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\cfg\argv.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\cfg\env.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\cfg\helpers-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\cfg\helpers.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\cfg\log_levels.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\backtracer-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\backtracer.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\circular_q.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\console_globals.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\file_helper-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\file_helper.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\fmt_helper.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\log_msg-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\log_msg.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\log_msg_buffer-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\log_msg_buffer.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\mpmc_blocking_q.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\null_mutex.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\os-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\os.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\periodic_worker-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\periodic_worker.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\registry-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\registry.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\synchronous_factory.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\tcp_client-windows.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\tcp_client.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\thread_pool-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\thread_pool.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\udp_client-windows.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\udp_client.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\windows_include.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bin_to_hex.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\chrono.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\compile.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\fmt.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\ostr.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\ranges.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\xchar.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\args.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\chrono.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\color.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\compile.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\core.h"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\fmt.license.rst"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\format-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\format.h"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\LICENSE.rst"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\locale.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\os.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\ostream.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\posix.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\printf.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\ranges.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\xchar.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\android_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\ansicolor_sink-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\ansicolor_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\base_sink-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\base_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\basic_file_sink-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\basic_file_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\daily_file_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\dist_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\dup_filter_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\hourly_file_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\mongo_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\msvc_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\null_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\ostream_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\qt_sinks.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\ringbuffer_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\rotating_file_sink-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\rotating_file_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\sink-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\stdout_color_sinks-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\stdout_color_sinks.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\stdout_sinks-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\stdout_sinks.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\syslog_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\systemd_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\tcp_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\udp_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\wincolor_sink-inl.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\wincolor_sink.h"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\win_eventlog_sink.h"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\logos\jetbrains-variant-4.svg"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\scripts\extract_version.py"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\scripts\format.sh"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\async.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\cfg.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\color_sinks.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\file_sinks.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\fmt.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\spdlog.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\stdout_sinks.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-    </ClCompile>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\string-view-lite\LICENSE.txt"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\string-view-lite\README.md"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\string-view-lite\cmake\string_view-lite-config.cmake.in"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\string-view-lite\include\nonstd\string_view.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\CMakeLists.txt"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\LICENSE.md"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\README.md"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\cmake\mpark_variant-config.cmake.in"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include\mpark\config.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include\mpark\in_place.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include\mpark\lib.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include\mpark\variant.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\RiderLink.uplugin"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Resources\checksum"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Resources\Icon128.png"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderBlueprint\RiderBlueprint.Build.cs"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderBlueprint\Private\BlueprintProvider.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_1)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_1)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderBlueprint\Private\RiderBlueprint.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_1)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_1)</ForcedIncludeFiles>
-    </ClCompile>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderBlueprint\Public\BlueprintProvider.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderBlueprint\Public\RiderBlueprint.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderGameControl\RiderGameControl.Build.cs"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderGameControl\Private\RiderGameControl.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
-    </ClCompile>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderGameControl\Public\RiderGameControl.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLC\RiderLC.Build.cs"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLC\Private\RiderLC.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_3)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_3)</ForcedIncludeFiles>
-    </ClCompile>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLC\Private\RiderLC.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\RiderLink.Build.cs"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Private\ProtocolFactory.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Private\ProtocolFactory.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Private\RiderLink.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Private\RiderLink.hpp"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Private\UE4TypesMarshallers.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\IRiderLink.hpp"/>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\UE4TypesMarshallers.h"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\CMakeLists.txt"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\instantiations_UE4Library.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\instantiations_UE4Library.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\BlueprintFunction.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\BlueprintFunction.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\BlueprintHighlighter.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\BlueprintHighlighter.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\BlueprintReference.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\BlueprintReference.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ConnectionInfo.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ConnectionInfo.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\EmptyScriptCallStack.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\EmptyScriptCallStack.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptCallStack.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptCallStack.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptCallStack_Unknown.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptCallStack_Unknown.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptMsg.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptMsg.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptMsg_Unknown.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptMsg_Unknown.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\LogMessageInfo.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\LogMessageInfo.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\NotificationType.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\NotificationType.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\PlayState.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\PlayState.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestFailed.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestFailed.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestResultBase.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestResultBase.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestResultBase_Unknown.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestResultBase_Unknown.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestSucceed.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestSucceed.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptCallStack.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptCallStack.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptCallStackFrame.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptCallStackFrame.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptMsgCallStack.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptMsgCallStack.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptMsgException.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptMsgException.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\StringRange.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\StringRange.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UClass.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UClass.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UE4Library.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UE4Library.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UnableToDisplayScriptCallStack.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UnableToDisplayScriptCallStack.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UnrealLogEvent.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UnrealLogEvent.Generated.h"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\CMakeLists.txt"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\instantiations_RdEditorRoot.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\instantiations_RdEditorRoot.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\LiveCodingModel\LiveCodingModel.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\LiveCodingModel\LiveCodingModel.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\RdEditorModel\RdEditorModel.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\RdEditorModel\RdEditorModel.Generated.h"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\RdEditorRoot\RdEditorRoot.Generated.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\RdEditorRoot\RdEditorRoot.Generated.h"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLogging\RiderLogging.Build.cs"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLogging\Private\RiderLogging.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_4)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_5)</ForcedIncludeFiles>
-    </ClCompile>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLogging\Private\RiderLogging.hpp"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLogging\Private\RiderOutputDevice.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_4)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_5)</ForcedIncludeFiles>
-    </ClCompile>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLogging\Private\RiderOutputDevice.hpp"/>
-    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderShaderInfo\RiderShaderInfo.Build.cs"/>
-    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderShaderInfo\RiderShaderInfo.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_5)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_6)</ForcedIncludeFiles>
-    </ClCompile>
-    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderShaderInfo\RiderShaderInfo.h"/>
-    <None Include="..\..\Source\M1\M1.Build.cs"/>
-    <ClCompile Include="..\..\Source\M1\M1.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_6)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_7)</ForcedIncludeFiles>
-      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\M1\M1.h"/>
-    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\AIC_AiEnemy.h"/>
-    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\AiEnemy.h"/>
-    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_ChasePlayer.h"/>
-    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\BTT_FindRandomLocation.h"/>
-    <ClInclude Include="..\..\Source\M1\Include\Character\Player\M1Character.h"/>
-    <ClInclude Include="..\..\Source\M1\Include\GameMode\M1GameMode.h"/>
-    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\AIC_AiEnemy.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_6)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_7)</ForcedIncludeFiles>
-      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\AiEnemy.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_6)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_7)</ForcedIncludeFiles>
-      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\BTT_ChasePlayer.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_6)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_7)</ForcedIncludeFiles>
-      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\BTT_FindRandomLocation.cpp">
+    <ClCompile Include="..\..\Source\M1\Source\Interactables\Gold.cpp">
       <AssemblerOutput>NoListing</AssemblerOutput>
       <AssemblerListingLocation>G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Unused\</AssemblerListingLocation>
       <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
@@ -1114,6 +399,733 @@
       <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
       <AdditionalOptions>/std:c++20  /DSAL_NO_ATTRIBUTE_DECLARATIONS=1 /permissive- /Zc:strictStrings- /Zc:__cplusplus /Yu"G:\Unreal Engine\Projet\TpJules\M1\Intermediate\Build\Win64\x64\M1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h"</AdditionalOptions>
       <AdditionalIncludeDirectories>;G:\Unreal Engine\UE_5.3\Engine\Shaders\Shared;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Engine\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Engine\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Engine\Internal;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\CoreOnline\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\CoreUObject\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\CoreUObject\Internal;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\FieldNotification\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Net\Core\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Net\Core\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Net\Common\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\ImageCore\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\JsonUtilities\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\SlateCore\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\InputCore\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\InputCore\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\ApplicationCore\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Slate\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\ImageWrapper\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Messaging\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\MessagingCommon\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Analytics\AnalyticsET\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Analytics\Analytics\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Sockets\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AssetRegistry\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AssetRegistry\Internal;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\EngineMessages\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\EngineSettings\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\EngineSettings\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SynthBenchmark\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SynthBenchmark\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\SynthBenchmark\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\GameplayTags\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\GameplayTags\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\DeveloperSettings\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\PacketHandlers\PacketHandler\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\PacketHandlers\PacketHandler\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\PacketHandlers\ReliabilityHandlerComponent\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AudioPlatformConfiguration\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\MeshDescription\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\StaticMeshDescription\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\SkeletalMeshDescription\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AnimationCore\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\PakFile\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\PakFile\Internal;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\RSA\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\NetworkReplayStreaming\NetworkReplayStreaming\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\PhysicsCore\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Experimental\ChaosCore\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Experimental\Chaos\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Voronoi\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Voronoi\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Experimental\Voronoi\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\GeometryCore\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\SignalProcessing\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AudioExtensions\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AudioMixerCore\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AudioMixer\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AudioMixer\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TargetPlatform\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TargetPlatform\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\TargetPlatform\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TextureFormat\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TextureFormat\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\TextureFormat\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\DesktopPlatform\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\DesktopPlatform\Internal;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AudioLink\AudioLinkEngine\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AudioLink\AudioLinkCore\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\CookOnTheFly\Internal;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Networking\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Experimental\IoStoreOnDemand\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TextureBuildUtilities\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TextureBuildUtilities\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\TextureBuildUtilities\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\Horde\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\ClothingSystemRuntimeInterface\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Experimental\Iris\Core\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\MovieSceneCapture\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Renderer\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TypedElementFramework\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TypedElementFramework\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\TypedElementFramework\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TypedElementRuntime\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TypedElementRuntime\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\TypedElementRuntime\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\AnimationDataController\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Interchange\Core\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\Kismet\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\Kismet\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolMenus\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolMenus\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\ToolMenus\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEd\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEd\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Programs\UnrealLightmass\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\UnrealEd\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\UnrealEd\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\UnrealEd\Internal;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\AssetTagsEditor\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\CollectionManager\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\ContentBrowser\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\AssetTools\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\AssetDefinition\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\EditorSubsystem\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\Merge\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\EditorFramework\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\InteractiveToolsFramework\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\ContentBrowserData\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\MeshUtilities\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\MeshMergeUtilities\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\MeshReductionInterface\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\RawMesh\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\MaterialUtilities\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\KismetCompiler\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\GameplayTasks\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\GameplayTasks\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\PropertyEditor\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\PropertyEditor\Internal;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\EditorConfig\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\ActorPickerMode\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\SceneDepthPickerMode\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\ClassViewer\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\DirectoryWatcher\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\Documentation\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\MainFrame\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\SandboxFile\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\SourceControl\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UncontrolledChangelists\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UncontrolledChangelists\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\UncontrolledChangelists\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEdMessages\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEdMessages\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\UnrealEdMessages\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\UnrealEdMessages\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\BlueprintGraph\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\BlueprintGraph\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Online\HTTP\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Online\HTTP\Internal;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\FunctionalTesting\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\FunctionalTesting\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\AutomationController\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AutomationTest\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\Localization\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\AudioEditor\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\AudioEditor\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UELibSampleRate\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UELibSampleRate\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\ThirdParty\libSampleRate\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\LevelEditor\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\CommonMenuExtensions\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\Settings\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolWidgets\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolWidgets\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\ToolWidgets\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\VREditor\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\VREditor\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\VREditor\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ViewportInteraction\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ViewportInteraction\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\ViewportInteraction\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\HeadMountedDisplay\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Landscape\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Landscape\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\DetailCustomizations\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\GraphEditor\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\StructViewer\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\NetworkFileSystem\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UMG\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UMG\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\UMG\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\MovieScene\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TimeManagement\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TimeManagement\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\TimeManagement\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\MovieSceneTracks\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Experimental\Animation\Constraints\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\PropertyPath\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\NavigationSystem\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Experimental\GeometryCollectionEngine\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Experimental\FieldSystem\Source\FieldSystemEngine\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Experimental\ChaosSolverEngine\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Experimental\Dataflow\Core\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Experimental\Dataflow\Engine\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\MeshBuilder\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\MeshUtilitiesCommon\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\MaterialShaderQualitySettings\Classes;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolMenusEditor\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolMenusEditor\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\ToolMenusEditor\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\StatusBar\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\Interchange\Engine\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\DeveloperToolSettings\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\DeveloperToolSettings\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\SubobjectDataInterface\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SubobjectEditor\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SubobjectEditor\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Editor\SubobjectEditor\Public;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\PhysicsUtilities\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\WidgetRegistration\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\WidgetRegistration\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Developer\WidgetRegistration\Public;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AIModule\UHT;G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AIModule\VNI;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AIModule\Classes;G:\Unreal Engine\UE_5.3\Engine\Source\Runtime\AIModule\Public;..\Build\Win64\UnrealEditor\Inc\M1\UHT;..\Build\Win64\UnrealEditor\Inc\M1\VNI;..\..\Source;G:\Unreal Engine\UE_5.3\Engine\Plugins\EnhancedInput\Intermediate\Build\Win64\UnrealEditor\Inc\EnhancedInput\UHT;G:\Unreal Engine\UE_5.3\Engine\Plugins\EnhancedInput\Intermediate\Build\Win64\UnrealEditor\Inc\EnhancedInput\VNI;G:\Unreal Engine\UE_5.3\Engine\Plugins\EnhancedInput\Source\EnhancedInput\Public;G:\Unreal Engine\UE_5.3\Engine\Source\ThirdParty\mimalloc\include;G:\Unreal Engine\UE_5.3\Engine\Source\ThirdParty\LibTiff\Source\Win64;G:\Unreal Engine\UE_5.3\Engine\Source\ThirdParty\LibTiff\Source</AdditionalIncludeDirectories>
+    </ClCompile>
+    <None Include="..\..\M1.uproject" />
+    <None Include="..\..\Source\M1.Target.cs" />
+    <None Include="..\..\Source\M1Editor.Target.cs" />
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\Config\DefaultEditor.ini" />
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini" />
+    <None Include="..\..\Config\DefaultEngine.ini" />
+    <None Include="..\..\Config\DefaultGame.ini" />
+    <None Include="..\..\Config\DefaultInput.ini" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\RD.Build.cs" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\RD.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\RD.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\rd_core_export.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\Lifetime.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\Lifetime.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\LifetimeDefinition.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\LifetimeDefinition.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\LifetimeImpl.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\LifetimeImpl.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\SequentialLifetimes.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\lifetime\SequentialLifetimes.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\Property.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\ViewableList.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\ViewableMap.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\ViewableSet.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\interfaces.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\IProperty.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\IPropertyBase.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\IViewableList.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\IViewableMap.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\IViewableSet.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\SignalCookie.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\SignalCookie.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\SignalX.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\reactive\base\viewable_collections.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std\allocator.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std\hash.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std\list.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std\to_string.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std\unordered_map.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\std\unordered_set.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\types\DateTime.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\types\DateTime.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\types\Void.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\types\wrapper.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\core_traits.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\core_util.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\enum.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\erase_if.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\gen_util.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\overloaded.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_core_cpp\src\main\util\shared_function.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\rd_framework_export.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IProtocol.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IProtocol.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IRdBindable.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IRdDynamic.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IRdReactive.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IRdWireable.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IRdWireable.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\ISerializersOwner.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\ISerializersOwner.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IUnknownInstance.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IUnknownInstance.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\IWire.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\RdBindableBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\RdBindableBase.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\RdPropertyBase.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\RdReactiveBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\RdReactiveBase.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\WireBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\base\WireBase.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\ext\ExtWire.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\ext\ExtWire.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\ext\RdExtBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\ext\RdExtBase.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RdList.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RdMap.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RdProperty.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RdSet.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RdSignal.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RName.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\impl\RName.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\intern\InternRoot.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\intern\InternRoot.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\intern\InternScheduler.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\intern\InternScheduler.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\Buffer.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\Buffer.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\Identities.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\Identities.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\MessageBroker.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\MessageBroker.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\Protocol.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\Protocol.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\RdId.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\protocol\RdId.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\SimpleScheduler.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\SimpleScheduler.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\SingleThreadScheduler.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\SingleThreadScheduler.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\SynchronousScheduler.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\SynchronousScheduler.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\base\IScheduler.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\base\IScheduler.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\base\SingleThreadSchedulerBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\scheduler\base\SingleThreadSchedulerBase.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\AbstractPolymorphic.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\ArraySerializer.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\DefaultAbstractDeclaration.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\DefaultAbstractDeclaration.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\InternedAnySerializer.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\InternedSerializer.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\ISerializable.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\ISerializable.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\NullableSerializer.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\Polymorphic.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\Polymorphic.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\RdAny.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\RdAny.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\SerializationCtx.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\SerializationCtx.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\Serializers.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\serialization\Serializers.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\RdCall.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\RdEndpoint.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\RdSymmetricCall.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\RdTask.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\RdTaskImpl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\RdTaskResult.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\WiredRdTask.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\task\WiredRdTaskImpl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util\framework_traits.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util\guards.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util\hashing.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util\hashing.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util\thread_util.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\util\thread_util.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\ByteBufferAsyncProcessor.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\ByteBufferAsyncProcessor.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\PkgInputStream.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\PkgInputStream.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\PumpScheduler.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\PumpScheduler.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\SocketWire.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\SocketWire.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\WireUtil.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_framework_cpp\src\main\wire\WireUtil.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_gen_cpp\src\RdTextBuffer.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\src\rd_gen_cpp\src\RdTextBuffer.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\thirdparty.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\thirdparty.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\README" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\ActiveSocket.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\ActiveSocket.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\Host.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\PassiveSocket.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\PassiveSocket.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\SimpleSocket.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\SimpleSocket.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\clsocket\src\StatTimer.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\countdownlatch\countdownlatch.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\countdownlatch\countdownlatch.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\countdownlatch\LICENSE" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\countdownlatch\README.md" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\LICENSE" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\README.md" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\CTPL\include\ctpl_stl.h" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\optional\COPYING" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\optional\README.md" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\optional\tl\optional.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\LICENSE" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\README.md" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\include\tsl\ordered_hash.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\include\tsl\ordered_map.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\ordered-map\include\tsl\ordered_set.h" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\LICENSE" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\README.md" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\ide.cmake" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\pch.h.in" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\spdlog.pc.in" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\spdlogConfig.cmake.in" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\spdlogCPack.cmake" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\utils.cmake" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\cmake\version.rc.in" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\async.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\async_logger-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\async_logger.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\common-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\common.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\formatter.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fwd.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\logger-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\logger.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\pattern_formatter-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\pattern_formatter.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\spdlog-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\spdlog.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\stopwatch.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\tweakme.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\version.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\cfg\argv.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\cfg\env.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\cfg\helpers-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\cfg\helpers.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\cfg\log_levels.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\backtracer-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\backtracer.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\circular_q.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\console_globals.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\file_helper-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\file_helper.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\fmt_helper.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\log_msg-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\log_msg.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\log_msg_buffer-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\log_msg_buffer.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\mpmc_blocking_q.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\null_mutex.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\os-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\os.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\periodic_worker-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\periodic_worker.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\registry-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\registry.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\synchronous_factory.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\tcp_client-windows.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\tcp_client.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\thread_pool-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\thread_pool.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\udp_client-windows.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\udp_client.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\details\windows_include.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bin_to_hex.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\chrono.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\compile.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\fmt.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\ostr.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\ranges.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\xchar.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\args.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\chrono.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\color.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\compile.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\core.h" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\fmt.license.rst" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\format-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\format.h" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\LICENSE.rst" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\locale.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\os.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\ostream.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\posix.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\printf.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\ranges.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\fmt\bundled\xchar.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\android_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\ansicolor_sink-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\ansicolor_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\base_sink-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\base_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\basic_file_sink-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\basic_file_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\daily_file_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\dist_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\dup_filter_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\hourly_file_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\mongo_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\msvc_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\null_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\ostream_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\qt_sinks.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\ringbuffer_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\rotating_file_sink-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\rotating_file_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\sink-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\stdout_color_sinks-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\stdout_color_sinks.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\stdout_sinks-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\stdout_sinks.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\syslog_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\systemd_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\tcp_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\udp_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\wincolor_sink-inl.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\wincolor_sink.h" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\include\spdlog\sinks\win_eventlog_sink.h" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\logos\jetbrains-variant-4.svg" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\scripts\extract_version.py" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\scripts\format.sh" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\async.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\cfg.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\color_sinks.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\file_sinks.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\fmt.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\spdlog.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\spdlog\src\stdout_sinks.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\string-view-lite\LICENSE.txt" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\string-view-lite\README.md" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\string-view-lite\cmake\string_view-lite-config.cmake.in" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\string-view-lite\include\nonstd\string_view.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\CMakeLists.txt" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\LICENSE.md" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\README.md" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\cmake\mpark_variant-config.cmake.in" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include\mpark\config.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include\mpark\in_place.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include\mpark\lib.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RD\thirdparty\variant\include\mpark\variant.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\RiderLink.uplugin" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Resources\checksum" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Resources\Icon128.png" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderBlueprint\RiderBlueprint.Build.cs" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderBlueprint\Private\BlueprintProvider.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_1)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_1)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderBlueprint\Private\RiderBlueprint.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_1)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_1)</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderBlueprint\Public\BlueprintProvider.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderBlueprint\Public\RiderBlueprint.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderGameControl\RiderGameControl.Build.cs" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderGameControl\Private\RiderGameControl.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderGameControl\Public\RiderGameControl.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLC\RiderLC.Build.cs" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLC\Private\RiderLC.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_3)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_3)</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLC\Private\RiderLC.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\RiderLink.Build.cs" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Private\ProtocolFactory.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Private\ProtocolFactory.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Private\RiderLink.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Private\RiderLink.hpp" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Private\UE4TypesMarshallers.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\IRiderLink.hpp" />
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\UE4TypesMarshallers.h" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\CMakeLists.txt" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\instantiations_UE4Library.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\instantiations_UE4Library.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\BlueprintFunction.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\BlueprintFunction.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\BlueprintHighlighter.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\BlueprintHighlighter.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\BlueprintReference.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\BlueprintReference.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ConnectionInfo.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ConnectionInfo.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\EmptyScriptCallStack.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\EmptyScriptCallStack.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptCallStack.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptCallStack.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptCallStack_Unknown.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptCallStack_Unknown.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptMsg.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptMsg.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptMsg_Unknown.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\IScriptMsg_Unknown.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\LogMessageInfo.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\LogMessageInfo.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\NotificationType.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\NotificationType.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\PlayState.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\PlayState.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestFailed.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestFailed.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestResultBase.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestResultBase.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestResultBase_Unknown.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestResultBase_Unknown.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestSucceed.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\RequestSucceed.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptCallStack.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptCallStack.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptCallStackFrame.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptCallStackFrame.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptMsgCallStack.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptMsgCallStack.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptMsgException.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\ScriptMsgException.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\StringRange.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\StringRange.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UClass.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UClass.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UE4Library.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UE4Library.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UnableToDisplayScriptCallStack.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UnableToDisplayScriptCallStack.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UnrealLogEvent.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\Library\UE4Library\UnrealLogEvent.Generated.h" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\CMakeLists.txt" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\instantiations_RdEditorRoot.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\instantiations_RdEditorRoot.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\LiveCodingModel\LiveCodingModel.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\LiveCodingModel\LiveCodingModel.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\RdEditorModel\RdEditorModel.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\RdEditorModel\RdEditorModel.Generated.h" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\RdEditorRoot\RdEditorRoot.Generated.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_4)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderLink\Public\Model\RdEditorProtocol\RdEditorRoot\RdEditorRoot.Generated.h" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLogging\RiderLogging.Build.cs" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLogging\Private\RiderLogging.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_4)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_5)</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLogging\Private\RiderLogging.hpp" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderLogging\Private\RiderOutputDevice.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_4)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_5)</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderLogging\Private\RiderOutputDevice.hpp" />
+    <None Include="..\..\Plugins\Developer\RiderLink\Source\RiderShaderInfo\RiderShaderInfo.Build.cs" />
+    <ClCompile Include="..\..\Plugins\Developer\RiderLink\Source\RiderShaderInfo\RiderShaderInfo.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_5)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_6)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\Developer\RiderLink\Source\RiderShaderInfo\RiderShaderInfo.h" />
+    <None Include="..\..\Source\M1\M1.Build.cs" />
+    <ClCompile Include="..\..\Source\M1\M1.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_6)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_7)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\M1\Include\Interactables\Gold.h" />
+    <ClInclude Include="..\..\Source\M1\M1.h" />
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\AIC_AiEnemy.h" />
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\AiEnemy.h" />
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\Task\BTT_ChasePlayer.h" />
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\Task\BTT_FindRandomLocation.h" />
+    <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\Task\BTT_GoToGold.h" />
+    <ClInclude Include="..\..\Source\M1\Include\Character\Player\M1Character.h" />
+    <ClInclude Include="..\..\Source\M1\Include\GameMode\M1GameMode.h" />
+    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\AIC_AiEnemy.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_6)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_7)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\AiEnemy.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_6)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_7)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\Task\BTT_ChasePlayer.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_6)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_7)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\Task\BTT_FindRandomLocation.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_6)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_7)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\M1\Source\Character\AI\Enemy\Task\BTT_GoToGold.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_6)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_7)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="..\..\Source\M1\Source\Character\Player\M1Character.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_6)</AdditionalIncludeDirectories>

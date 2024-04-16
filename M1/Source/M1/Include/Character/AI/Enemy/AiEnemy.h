@@ -29,4 +29,5 @@ protected:
 	// Our Behaviour tree property that will handle the logic of your ai. 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="AI", meta=(AllowPrivateAccess="true"))
 	UBehaviorTree* Tree;
+	
 };

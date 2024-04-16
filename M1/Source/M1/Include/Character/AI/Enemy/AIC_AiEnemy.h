@@ -16,6 +16,8 @@ public:
 	// Constructor.
 	explicit AAIC_AiEnemy(FObjectInitializer const& ObjectInitializer);
 
+	FVector GoldLocation;
+
 protected:
 
 	// Link blackboard to behavior tree.
