@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "g:\\unreal engine\\projet\\tpjules\\m1\\intermediate\\build\\win64\\unrealeditor\\inc\\m1\\uht\\agold.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "g:\\unreal engine\\projet\\tpjules\\m1\\intermediate\\build\\win64\\x64\\m1editor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "g:\\unreal engine\\projet\\tpjules\\m1\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\m1\\definitions.m1.h",
+            "g:\\unreal engine\\projet\\tpjules\\m1\\source\\m1\\include\\interactables\\agold.h",
+            "g:\\unreal engine\\projet\\tpjules\\m1\\intermediate\\build\\win64\\unrealeditor\\inc\\m1\\uht\\agold.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -9,6 +9,9 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
 #ifdef M1_M1Character_generated_h
 #error "M1Character.generated.h already included, missing '#pragma once' in M1Character.h"
 #endif
@@ -17,7 +20,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Projet_TpJules_M1_Source_M1_Include_Character_Player_M1Character_h_21_SPARSE_DATA
 #define FID_Projet_TpJules_M1_Source_M1_Include_Character_Player_M1Character_h_21_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Projet_TpJules_M1_Source_M1_Include_Character_Player_M1Character_h_21_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_Projet_TpJules_M1_Source_M1_Include_Character_Player_M1Character_h_21_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_Projet_TpJules_M1_Source_M1_Include_Character_Player_M1Character_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnOverlapEnd);
+
+
 #define FID_Projet_TpJules_M1_Source_M1_Include_Character_Player_M1Character_h_21_ACCESSORS
 #define FID_Projet_TpJules_M1_Source_M1_Include_Character_Player_M1Character_h_21_INCLASS_NO_PURE_DECLS \
 private: \

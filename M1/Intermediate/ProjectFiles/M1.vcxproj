@@ -327,7 +327,7 @@
     <ClCompile_AdditionalOptions>$(AdditionalOptions) /Yu"$(SolutionDir)Intermediate\Build\Win64\x64\M1Editor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h"</ClCompile_AdditionalOptions>
   </PropertyGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\M1\Source\Interactables\Gold.cpp">
+    <ClCompile Include="..\..\Source\M1\Source\Interactables\AGold.cpp">
       <AssemblerOutput>NoListing</AssemblerOutput>
       <AssemblerListingLocation>G:\Unreal Engine\UE_5.3\Engine\Intermediate\Build\Unused\</AssemblerListingLocation>
       <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
@@ -1093,7 +1093,7 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_7)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
-    <ClInclude Include="..\..\Source\M1\Include\Interactables\Gold.h" />
+    <ClInclude Include="..\..\Source\M1\Include\Interactables\AGold.h" />
     <ClInclude Include="..\..\Source\M1\M1.h" />
     <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\AIC_AiEnemy.h" />
     <ClInclude Include="..\..\Source\M1\Include\Character\AI\Enemy\AiEnemy.h" />

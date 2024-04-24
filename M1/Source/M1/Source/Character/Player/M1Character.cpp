@@ -1,6 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "M1/Include/Character/Player/M1Character.h"
+#include "M1/Include/Interactables/AGold.h"
+#include "Components/BoxComponent.h"
 #include "Engine/LocalPlayer.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -22,7 +24,14 @@ AM1Character::AM1Character()
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
-		
+
+	// if collide call the fct...
+	CollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
+	CollisionBox->SetBoxExtent(FVector(32.f,32.f,32.f));
+	CollisionBox->SetCollisionProfileName("Trigger");
+	//RootComponent = CollisionBox;
+	CollisionBox->OnComponentBeginOverlap.AddDynamic(this, &AM1Character::OnOverlapEnd);
+	
 	// Don't rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
@@ -88,6 +97,18 @@ void AM1Character::SetupStimulusSource()
 	{
 		StimulusSource->RegisterForSense(TSubclassOf<UAISense_Sight>());
 		StimulusSource->RegisterWithPerceptionSystem();
+	}
+}
+
+void AM1Character::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "ohh");
+	UE_LOG(LogTemp, Warning, TEXT("Hello"));
+	if(const auto* Gold = Cast<AAGold>(OtherActor))
+	{
+		GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "ohh");
+		UE_LOG(LogTemp, Warning, TEXT("Hello"));
 	}
 }
 

@@ -1476,10 +1476,10 @@
     <Filter Include="Source\M1\Include">
       <UniqueIdentifier>{905B0250-E5BE-3CAE-A1E6-C0193CCB871F}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\M1\Include\Gold.cpp">
+    <ClCompile Include="..\..\Source\M1\Include\AGold.cpp">
       <Filter>Source\M1\Include</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\M1\Include\Gold.h">
+    <ClInclude Include="..\..\Source\M1\Include\AGold.h">
       <Filter>Source\M1\Include</Filter>
     </ClInclude>
     <Filter Include="Source\M1\Include\Character">

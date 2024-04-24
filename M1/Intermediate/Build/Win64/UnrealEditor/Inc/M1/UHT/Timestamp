@@ -1,8 +1,8 @@
 G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\Character\AI\Enemy\AIC_AiEnemy.h
 G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\Character\AI\Enemy\AiEnemy.h
-G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\Interactables\Gold.h
 G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\Character\AI\Enemy\Task\BTT_ChasePlayer.h
 G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\Character\AI\Enemy\Task\BTT_FindRandomLocation.h
+G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\Character\AI\Enemy\Task\BTT_GoToGold.h
 G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\Character\Player\M1Character.h
 G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\GameMode\M1GameMode.h
-G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\Character\AI\Enemy\Task\BTT_GoToGold.h
+G:\Unreal Engine\Projet\TpJules\M1\Source\M1\Include\Interactables\AGold.h

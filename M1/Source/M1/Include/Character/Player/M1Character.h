@@ -70,11 +70,19 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 	
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+		class UBoxComponent *CollisionBox;
+	
 private:
 
 	class UAIPerceptionStimuliSourceComponent* StimulusSource;
 
 	// Create the stimulus source.
 	void SetupStimulusSource();
+
+	UFUNCTION()
+	void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+
 };
 

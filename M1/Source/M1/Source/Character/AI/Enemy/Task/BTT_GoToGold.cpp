@@ -4,8 +4,7 @@
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
-#include "M1/Include/Interactables/Gold.h"
-//#include "M1/Include/Interactables/A_Gold.h"
+
 
 UBTT_GoToGold::UBTT_GoToGold(FObjectInitializer const& ObjectInitializer)
 {
