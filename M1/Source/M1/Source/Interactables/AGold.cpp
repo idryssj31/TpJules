@@ -6,7 +6,6 @@
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
 #include "Components/BoxComponent.h"
-#include "M1/Include/Character/AI/Enemy/AIC_AiEnemy.h"
 #include "M1/Include/Character/AI/Enemy/AiEnemy.h"
 
 
@@ -59,6 +58,9 @@ void AAGold::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 	{
 		GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "Collide player");
 		Destroy();
+		player->NbrHealth--;
+		//GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "Life point %i" + player->NbrHealth);
+		UE_LOG(LogTemp,Warning,TEXT("MyCharacter's Health is %d"), player->NbrHealth );
 	}
 
 	if(auto* npc = Cast<AAiEnemy>(OtherActor))

@@ -62,6 +62,4 @@ void AAIC_AiEnemy::OnTargetDetected(AActor* Actor, FAIStimulus const Stimulus)
 		GetBlackboardComponent()->SetValueAsBool("CanSeeGold", Stimulus.WasSuccessfullySensed());
 		GetBlackboardComponent()->SetValueAsVector("TargetGoldLocation",Perso->GetTargetLocation());
 	}
-
-
 }

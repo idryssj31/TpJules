@@ -72,6 +72,10 @@ public:
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 		class UBoxComponent *CollisionBox;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Health")
+		int32 NbrMaxHealth = 10;
+		int32 NbrHealth;
 	
 private:
 
@@ -79,10 +83,6 @@ private:
 
 	// Create the stimulus source.
 	void SetupStimulusSource();
-
-	UFUNCTION()
-	void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-
 
 };
 

@@ -36,6 +36,7 @@ AM1Character::AM1Character()
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
+	NbrHealth = NbrMaxHealth;
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = false; // Character moves in the direction of input...	
