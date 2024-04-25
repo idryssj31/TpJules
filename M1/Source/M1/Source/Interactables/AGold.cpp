@@ -2,9 +2,15 @@
 
 
 #include "M1/Include/Interactables/AGold.h"
+#include "M1/Include/Character/Player/M1Character.h"
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
 #include "Components/BoxComponent.h"
+#include "M1/Include/Character/AI/Enemy/AIC_AiEnemy.h"
+#include "M1/Include/Character/AI/Enemy/AiEnemy.h"
+
+
+
 
 // Sets default values
 AAGold::AAGold()
@@ -49,8 +55,17 @@ void AAGold::SetupStimulusSource()
 void AAGold::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 	int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "ohh");
-	UE_LOG(LogTemp, Warning, TEXT("Hello"));
+	if(auto* player = Cast<AM1Character>(OtherActor))
+	{
+		GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "Collide player");
+		Destroy();
+	}
+
+	if(auto* npc = Cast<AAiEnemy>(OtherActor))
+	{
+		GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "Collide ai enemy");
+		Destroy();
+	}
 }
 
 void AAGold::PostInitializeComponents()
