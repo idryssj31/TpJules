@@ -30,7 +30,7 @@ AM1Character::AM1Character()
 	CollisionBox->SetBoxExtent(FVector(32.f,32.f,32.f));
 	CollisionBox->SetCollisionProfileName("Trigger");
 	//RootComponent = CollisionBox;
-	CollisionBox->OnComponentBeginOverlap.AddDynamic(this, &AM1Character::OnOverlapEnd);
+	//CollisionBox->OnComponentBeginOverlap.AddDynamic(this, &AM1Character::OnOverlapEnd);
 	
 	// Don't rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = false;
@@ -101,17 +101,7 @@ void AM1Character::SetupStimulusSource()
 	}
 }
 
-void AM1Character::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
-{
-	GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "ohh");
-	UE_LOG(LogTemp, Warning, TEXT("Hello"));
-	if(const auto* Gold = Cast<AAGold>(OtherActor))
-	{
-		GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "ohh");
-		UE_LOG(LogTemp, Warning, TEXT("Hello"));
-	}
-}
+
 
 //////////////////////////////////////////////////////////////////////////
 // Input
