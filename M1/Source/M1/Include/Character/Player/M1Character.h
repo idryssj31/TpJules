@@ -74,7 +74,7 @@ public:
 		class UBoxComponent *CollisionBox;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Health")
-		int32 NbrMaxHealth = 10;
+		int32 NbrMaxHealth = 5;
 		int32 NbrHealth;
 	
 private:

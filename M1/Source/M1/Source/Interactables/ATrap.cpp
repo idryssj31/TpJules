@@ -41,7 +41,7 @@ void AATrap::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 	{
 		GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "Trap Collide player");
 		player->NbrHealth--;
-		UE_LOG(LogTemp,Warning,TEXT("MyCharacter's Health is %d"), player->NbrHealth );
+		UE_LOG(LogTemp,Warning,TEXT("MyCharacter's Health is %d"), player->NbrHealth);
 	}
 }
 
