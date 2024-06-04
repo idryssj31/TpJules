@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+
 #include "Logging/LogMacros.h"
 #include "M1Character.generated.h"
 
@@ -47,6 +48,12 @@ class AM1Character : public ACharacter
 public:
 	AM1Character();
 	
+	//
+	TArray<AActor*> FoundActors;
+	
+	
+
+	
 
 protected:
 
@@ -71,11 +78,16 @@ public:
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-		class UBoxComponent *CollisionBox;
+	class UBoxComponent *CollisionBox;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Health")
-		int32 NbrMaxHealth = 5;
-		int32 NbrHealth;
+	int32 NbrMaxHealth = 5;
+	int32 NbrHealth;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Gold")
+	int32 NbrGoldInScene;
+
+
 	
 private:
 

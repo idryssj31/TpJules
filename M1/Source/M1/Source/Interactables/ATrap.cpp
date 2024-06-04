@@ -4,6 +4,8 @@
 #include "M1/Include/Interactables/ATrap.h"
 #include "M1/Include/Character/Player/M1Character.h"
 #include "Components/BoxComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "GameFramework/PlayerStart.h"
 
 // Sets default values
 AATrap::AATrap()
@@ -13,7 +15,7 @@ AATrap::AATrap()
 
 	// if collide call the fct...
 	CollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
-	CollisionBox->SetBoxExtent(FVector(32.f,32.f,32.f));
+	CollisionBox->SetBoxExtent(FVector(38.f,38.f,38.f));
 	CollisionBox->SetCollisionProfileName("Trigger");
 
 	CollisionBox->OnComponentBeginOverlap.AddDynamic(this, &AATrap::OnOverlapBegin);
@@ -31,7 +33,6 @@ void AATrap::BeginPlay()
 void AATrap::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 void AATrap::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
@@ -39,9 +40,14 @@ void AATrap::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 {
 	if(auto* player = Cast<AM1Character>(OtherActor))
 	{
-		GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "Trap Collide player");
-		player->NbrHealth--;
-		UE_LOG(LogTemp,Warning,TEXT("MyCharacter's Health is %d"), player->NbrHealth);
+		if(player->NbrHealth > 0)
+		{
+			GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "Trap Collide player");
+			player->NbrHealth--;
+			UE_LOG(LogTemp,Warning,TEXT("MyCharacter's Health is %d"), player->NbrHealth);
+		}
+		else {UGameplayStatics::OpenLevel(this, TEXT("/Content/ThirdPerson/Maps/ThirdPersonMap"), true);}
+		
 	}
 }
 

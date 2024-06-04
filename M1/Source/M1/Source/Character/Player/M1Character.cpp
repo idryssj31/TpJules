@@ -12,6 +12,8 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "Kismet/GameplayStatics.h"
+
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
 
@@ -65,7 +67,18 @@ AM1Character::AM1Character()
 	SetupStimulusSource();
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AAGold::StaticClass(),FoundActors);
+	UE_LOG(LogTemp, Warning, TEXT("%d"), FoundActors.Num());
 	
+
+	for (AActor* Actor : FoundActors)
+	{
+		NbrGoldInScene++;
+	}
+	
+	UE_LOG(LogTemp, Warning, TEXT("The integer value is: %d"), NbrGoldInScene);
+
 }
 
 void AM1Character::BeginPlay()

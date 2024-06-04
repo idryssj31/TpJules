@@ -6,9 +6,9 @@
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
 #include "Components/BoxComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "M1/Include/Character/AI/Enemy/AiEnemy.h"
-
-
+#include "M1/Include/GameMode/M1GameMode.h"
 
 
 // Sets default values
@@ -51,19 +51,29 @@ void AAGold::SetupStimulusSource()
 	}
 }
 
+
 void AAGold::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
-	int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+                            int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	if(auto* player = Cast<AM1Character>(OtherActor))
 	{
-		GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "Collide player");
-		Destroy();
+		//Destroy();
+		UE_LOG(LogTemp,Warning,TEXT("Collide player"));
+		player->NbrGoldInScene--;
+		UE_LOG(LogTemp,Warning,TEXT("value : %d"), player->NbrGoldInScene);
+		
+		if(player->NbrGoldInScene == 0)
+		{
+			UE_LOG(LogTemp,Warning,TEXT("Winn"));
+		}
+		
 	}
 
 	if(auto* npc = Cast<AAiEnemy>(OtherActor))
 	{
 		GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "Collide ai enemy");
 		Destroy();
+
 	}
 }
 

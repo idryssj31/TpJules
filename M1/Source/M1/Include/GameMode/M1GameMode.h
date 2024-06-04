@@ -13,6 +13,9 @@ class AM1GameMode : public AGameModeBase
 
 public:
 	AM1GameMode();
+
+
+
 };
 
 

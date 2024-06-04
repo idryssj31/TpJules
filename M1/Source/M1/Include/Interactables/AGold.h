@@ -6,6 +6,9 @@
 #include "GameFramework/Actor.h"
 #include "AGold.generated.h"
 
+
+class AM1GameMode;
+
 UCLASS(config=Game)
 class M1_API AAGold : public AActor
 {
@@ -14,6 +17,7 @@ class M1_API AAGold : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AAGold();
+
 
 protected:
 	// Called when the game starts or when spawned
@@ -33,6 +37,13 @@ private:
 	// Create the stimulus source.
 	void SetupStimulusSource();
 
+
+	
+
+
+	
 	UFUNCTION()
 	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	
+
 };
