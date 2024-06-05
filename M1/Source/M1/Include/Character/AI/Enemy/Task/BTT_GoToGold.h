@@ -12,9 +12,10 @@ class M1_API UBTT_GoToGold : public UBTTask_BlackboardBase
 	
 public:
 
-	// Constructor
+	/** Constructor */
 	explicit UBTT_GoToGold(FObjectInitializer const& ObjectInitializer);
-	
+
+	/** */
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 	
 };

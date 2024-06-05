@@ -7,27 +7,34 @@
 #include "ATrap.generated.h"
 
 UCLASS(config=Game)
+
 class M1_API AATrap : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
-	// Sets default values for this actor's properties
+
+	/** Sets default values for this actor's properties */
 	AATrap();
 
 protected:
-	// Called when the game starts or when spawned
+
+	/** Called when the game starts or when spawned */
 	virtual void BeginPlay() override;
 
 public:	
-	// Called every frame
+
+	/** Called every frame */
 	virtual void Tick(float DeltaTime) override;
 
+	/** Component Collider use for the BeginOverlap */
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-		class UBoxComponent *CollisionBox;
-
+	class UBoxComponent *CollisionBox;
+	
 private:
 	
+	/** */
 	UFUNCTION()
 	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
 };

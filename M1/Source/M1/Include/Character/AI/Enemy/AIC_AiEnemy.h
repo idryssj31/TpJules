@@ -13,23 +13,27 @@ class M1_API AAIC_AiEnemy : public AAIController
 
 public:
 
-	// Constructor.
+	/** Constructor */
 	explicit AAIC_AiEnemy(FObjectInitializer const& ObjectInitializer);
 
+	/** */
 	FVector GoldLocation;
 
 protected:
 
-	// Link blackboard to behavior tree.
+	/** Link blackboard to behavior tree */
 	virtual void OnPossess(APawn* InPawn) override;
 
 private:
+
+	/** */
 	UAISenseConfig_Sight* SightConfig;
 
-	// Setup sight component value.
+	/** Setup sight component value */
 	void SetupSightSystem();
 
+	/** If the player is detected */
 	UFUNCTION()
-	// If the player is detected.
 	void OnTargetDetected(AActor* Actor, FAIStimulus const Stimulus);
+	
 };

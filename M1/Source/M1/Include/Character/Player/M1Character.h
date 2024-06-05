@@ -46,14 +46,12 @@ class AM1Character : public ACharacter
 	UInputAction* LookAction;
 
 public:
+	
+	/** Sets default values for this actor's properties */
 	AM1Character();
 	
-	//
+	/** Actor Array */ 
 	TArray<AActor*> FoundActors;
-	
-	
-
-	
 
 protected:
 
@@ -62,38 +60,46 @@ protected:
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
-			
-
-protected:
-	// APawn interface
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	
-	// To add mapping context
+	/** APawn interface */
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	/** Function called when the player falls off the field and subtracted life points and teleported to a predefined location */
+	virtual void FellOutOfWorld(const UDamageType& dmgType) override;
+	
+	/** To add mapping context */
 	virtual void BeginPlay();
 
 public:
-	/** Returns CameraBoom subobject **/
-	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
-	/** Returns FollowCamera subobject **/
-	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 	
+	/** Returns CameraBoom subobject */
+	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+	
+	/** Returns FollowCamera subobject */
+	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	/** Component Collider use for the BeginOverlap */
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	class UBoxComponent *CollisionBox;
 
+	/** Integer of Max Health at the begin */
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Health")
 	int32 NbrMaxHealth = 5;
+
+	/** Integer of Health Point */ 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Health")
 	int32 NbrHealth;
 
+	/** Integer of Number of Gold coin present on the stage at the very beginning */
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Gold")
 	int32 NbrGoldInScene;
 
-
-	
 private:
-
+	
+	/** This actor will be considered in the perception system */
 	class UAIPerceptionStimuliSourceComponent* StimulusSource;
 
-	// Create the stimulus source.
+	/** Create the stimulus source */
 	void SetupStimulusSource();
 
 };

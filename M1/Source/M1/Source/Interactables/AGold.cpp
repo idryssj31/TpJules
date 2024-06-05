@@ -57,7 +57,7 @@ void AAGold::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 {
 	if(auto* player = Cast<AM1Character>(OtherActor))
 	{
-		//Destroy();
+		
 		UE_LOG(LogTemp,Warning,TEXT("Collide player"));
 		player->NbrGoldInScene--;
 		UE_LOG(LogTemp,Warning,TEXT("value : %d"), player->NbrGoldInScene);

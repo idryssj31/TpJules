@@ -8,12 +8,13 @@ UCLASS()
 class M1_API UBTT_ChasePlayer : public UBTTask_BlackboardBase
 {
 	GENERATED_BODY()
-
+	
 public:
 
-	// Constructor
+	/** Constructor */
 	explicit UBTT_ChasePlayer(FObjectInitializer const& ObjectInitializer);
-	
+
+	/** */
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 	
 };

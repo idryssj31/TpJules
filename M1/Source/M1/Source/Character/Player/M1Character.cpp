@@ -13,6 +13,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "Kismet/GameplayStatics.h"
+#include "Misc/OutputDeviceNull.h"
 
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
@@ -139,6 +140,21 @@ void AM1Character::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 		UE_LOG(LogTemplateCharacter, Error, TEXT("'%s' Failed to find an Enhanced Input component! This template is built to use the Enhanced Input system. If you intend to use the legacy system, then you will need to update this C++ file."), *GetNameSafe(this));
 	}
 }
+
+void AM1Character::FellOutOfWorld(const UDamageType& dmgType)
+{
+	NbrHealth--;
+	TeleportTo(FVector(200,200,0), FRotator(0,0,0), false, false);
+	UE_LOG(LogTemp,Warning,TEXT("MyCharacter's Health is %d"), NbrHealth);
+	if(NbrHealth < 1 )
+	{
+		UGameplayStatics::OpenLevel(this, TEXT("/Content/ThirdPerson/Maps/ThirdPersonMap"), true);
+	}
+	FOutputDeviceNull ar;
+	CallFunctionByNameWithArguments(TEXT("CallSuppHudHeart"), ar , NULL, true);
+}
+
+
 
 void AM1Character::Move(const FInputActionValue& Value)
 {

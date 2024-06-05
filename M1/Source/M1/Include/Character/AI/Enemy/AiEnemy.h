@@ -12,21 +12,21 @@ class M1_API AAiEnemy : public ACharacter
 
 public:
 	
-	// Sets default values for this character's properties
+	/** Sets default values for this character's properties */
 	AAiEnemy();
 	
-	// Called every frame
+	/** Called every frame */
 	virtual void Tick(float DeltaTime) override;
 	
-	// Return the behavior tree.
+	/** Return the behavior tree */
 	UBehaviorTree* GetBehaviorTree() const;
 	
 protected:
 	
-	// Called when the game starts or when spawned
+	/** Called when the game starts or when spawned */
 	virtual void BeginPlay() override;
 
-	// Our Behaviour tree property that will handle the logic of your ai. 
+	/** Our Behaviour tree property that will handle the logic of your ai */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="AI", meta=(AllowPrivateAccess="true"))
 	UBehaviorTree* Tree;
 	

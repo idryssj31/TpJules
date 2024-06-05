@@ -9,14 +9,16 @@ class M1_API UBTT_FindRandomLocation : public UBTTask_BlackboardBase
 	GENERATED_BODY()
 
 public:
-	// Constructor.
+	
+	/** Constructor */
 	explicit UBTT_FindRandomLocation(FObjectInitializer const& ObjectInitializer);
 	
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
 private:
 
-	// Range radius.
+	/** Range radius */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="AI", meta=(AllowPrivateAccess="true"))
 	float SearchRadius = 1500.f;
+	
 };

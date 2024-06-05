@@ -40,14 +40,16 @@ void AATrap::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 {
 	if(auto* player = Cast<AM1Character>(OtherActor))
 	{
-		if(player->NbrHealth > 0)
+		if(player->NbrHealth == 0)
+		{
+			UGameplayStatics::OpenLevel(this, TEXT("/Content/ThirdPerson/Maps/ThirdPersonMap"), true);
+		}
+		else
 		{
 			GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "Trap Collide player");
 			player->NbrHealth--;
 			UE_LOG(LogTemp,Warning,TEXT("MyCharacter's Health is %d"), player->NbrHealth);
-		}
-		else {UGameplayStatics::OpenLevel(this, TEXT("/Content/ThirdPerson/Maps/ThirdPersonMap"), true);}
-		
+		}	
 	}
 }
 
