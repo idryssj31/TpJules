@@ -16,9 +16,6 @@ public:
 	/** Constructor */
 	explicit AAIC_AiEnemy(FObjectInitializer const& ObjectInitializer);
 
-	/** */
-	FVector GoldLocation;
-
 protected:
 
 	/** Link blackboard to behavior tree */
@@ -26,13 +23,13 @@ protected:
 
 private:
 
-	/** */
+	/** Class allowing us to configure what we can see and how our AI can see */
 	UAISenseConfig_Sight* SightConfig;
 
 	/** Setup sight component value */
 	void SetupSightSystem();
 
-	/** If the player is detected */
+	/** If the player is detected we assign a value to our boolean and our vector */
 	UFUNCTION()
 	void OnTargetDetected(AActor* Actor, FAIStimulus const Stimulus);
 	

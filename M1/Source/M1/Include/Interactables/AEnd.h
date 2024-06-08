@@ -4,36 +4,36 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "ATrap.generated.h"
+#include "AEnd.generated.h"
 
-UCLASS(config=Game)
-
-class M1_API AATrap : public AActor
+UCLASS()
+class M1_API AAEnd : public AActor
 {
 	GENERATED_BODY()
 	
-public:	
-
+public:
+	
 	/** Sets default values for this actor's properties */
-	AATrap();
-
-protected:
-
-	/** Called when the game starts or when spawned */
-	virtual void BeginPlay() override;
-
-public:	
-
-	/** Called every frame */
-	virtual void Tick(float DeltaTime) override;
+	AAEnd();
 
 	/** Component Collider use for the BeginOverlap */
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	class UBoxComponent *CollisionBox;
 	
+protected:
+	
+	/** Called when the game starts or when spawned */
+	virtual void BeginPlay() override;
+
+public:
+	
+	/** Called every frame */
+	virtual void Tick(float DeltaTime) override;
+
+
 private:
 	
-	/** The function is launched if the actor has come into contact with another specific actor and subtract the number of life points and reload the game if needed */
+	/** The function is launched if the actor has come into contact with another specific actor and depending on the number of pieces present on the ground will display a message */
 	UFUNCTION()
 	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 

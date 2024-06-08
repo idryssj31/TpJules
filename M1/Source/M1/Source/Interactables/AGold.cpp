@@ -61,7 +61,8 @@ void AAGold::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 		UE_LOG(LogTemp,Warning,TEXT("Collide player"));
 		player->NbrGoldInScene--;
 		UE_LOG(LogTemp,Warning,TEXT("value : %d"), player->NbrGoldInScene);
-		
+		player->CAllHudSuppGold();
+		Destroy();
 		if(player->NbrGoldInScene == 0)
 		{
 			UE_LOG(LogTemp,Warning,TEXT("Winn"));

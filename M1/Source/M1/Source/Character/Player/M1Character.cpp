@@ -32,14 +32,13 @@ AM1Character::AM1Character()
 	CollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
 	CollisionBox->SetBoxExtent(FVector(32.f,32.f,32.f));
 	CollisionBox->SetCollisionProfileName("Trigger");
-	//RootComponent = CollisionBox;
-	//CollisionBox->OnComponentBeginOverlap.AddDynamic(this, &AM1Character::OnOverlapEnd);
+
 	
 	// Don't rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
-	NbrHealth = NbrMaxHealth;
+	
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = false; // Character moves in the direction of input...	
@@ -65,20 +64,17 @@ AM1Character::AM1Character()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
+	SetupHealthValue();
+	
 	SetupStimulusSource();
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 
+	// Get all actor present on the field
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AAGold::StaticClass(),FoundActors);
 	UE_LOG(LogTemp, Warning, TEXT("%d"), FoundActors.Num());
-	
 
-	for (AActor* Actor : FoundActors)
-	{
-		NbrGoldInScene++;
-	}
-	
-	UE_LOG(LogTemp, Warning, TEXT("The integer value is: %d"), NbrGoldInScene);
+	FoundGoldInScene();
 
 }
 
@@ -95,14 +91,23 @@ void AM1Character::BeginPlay()
 			Subsystem->AddMappingContext(DefaultMappingContext, 0);
 		}
 	}
+	// Cam rotation
+	SetupCamRotation();
 
-	// Get player camera manager and disable all camera rotation.
-	APlayerCameraManager* const camMan = GetWorld()->GetFirstPlayerController()->PlayerCameraManager;
-	
-	camMan->ViewPitchMax = 0.f;
-	camMan->ViewPitchMin = 0.f;
-	camMan->ViewYawMax = 0.f;
-	camMan->ViewYawMin = 0.f;
+}
+
+void AM1Character::CAllHudSuppHearth()
+{
+	// I call the "CallSuppHudHeart" in my blueprint third person character that will call the supp heart function of the hearth Widget
+	FOutputDeviceNull ar;
+	CallFunctionByNameWithArguments(TEXT("CallSuppHudHeart"), ar , NULL, true);
+}
+
+void AM1Character::CAllHudSuppGold()
+{
+	// I call the "CallSuppHudGold" in my blueprint third person character that will call the supp gold function of the gold Widget
+	FOutputDeviceNull ar;
+	CallFunctionByNameWithArguments(TEXT("CallSuppHudGold"), ar , NULL, true);
 }
 
 void AM1Character::SetupStimulusSource()
@@ -115,6 +120,32 @@ void AM1Character::SetupStimulusSource()
 	}
 }
 
+void AM1Character::SetupCamRotation() const
+{
+	// Get player camera manager and disable all camera rotation.
+	APlayerCameraManager* const camMan = GetWorld()->GetFirstPlayerController()->PlayerCameraManager;
+	
+	camMan->ViewPitchMax = 0.f;
+	camMan->ViewPitchMin = 0.f;
+	camMan->ViewYawMax = 0.f;
+	camMan->ViewYawMin = 0.f;
+}
+
+void AM1Character::SetupHealthValue()
+{
+	// Set Health Value
+	NbrHealth = NbrMaxHealth;
+}
+
+void AM1Character::FoundGoldInScene()
+{
+	// Increment the number of NbrGoldInScene depending on the number of actors in this class
+	for (AActor* Actor : FoundActors)
+	{
+		NbrGoldInScene++;
+	}
+	UE_LOG(LogTemp, Warning, TEXT("The integer value is: %d"), NbrGoldInScene);
+}
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -150,8 +181,8 @@ void AM1Character::FellOutOfWorld(const UDamageType& dmgType)
 	{
 		UGameplayStatics::OpenLevel(this, TEXT("/Content/ThirdPerson/Maps/ThirdPersonMap"), true);
 	}
-	FOutputDeviceNull ar;
-	CallFunctionByNameWithArguments(TEXT("CallSuppHudHeart"), ar , NULL, true);
+
+	CAllHudSuppHearth();
 }
 
 

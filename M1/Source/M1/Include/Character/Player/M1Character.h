@@ -53,6 +53,12 @@ public:
 	/** Actor Array */ 
 	TArray<AActor*> FoundActors;
 
+	/** Call a specific function in my third person blueprint */
+	void CAllHudSuppHearth();
+	
+	/** Call a specific function in my third person blueprint */
+	void CAllHudSuppGold();
+	
 protected:
 
 	/** Called for movement input */
@@ -101,6 +107,15 @@ private:
 
 	/** Create the stimulus source */
 	void SetupStimulusSource();
+
+	/** Setup Axe rotation of the camera */
+	void SetupCamRotation() const;
+
+	/** Setup Int Health value at the begin */
+	void SetupHealthValue();
+
+	/** Fill the array of Gold Actor */
+	void FoundGoldInScene();
 
 };
 

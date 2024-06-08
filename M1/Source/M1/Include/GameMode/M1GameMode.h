@@ -12,10 +12,10 @@ class AM1GameMode : public AGameModeBase
 	GENERATED_BODY()
 
 public:
+
+	/** Sets default values for this actor's properties */
 	AM1GameMode();
-
-
-
+	
 };
 
 
