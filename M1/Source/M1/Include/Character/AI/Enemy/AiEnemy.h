@@ -20,6 +20,10 @@ public:
 	
 	/** Return the behavior tree */
 	UBehaviorTree* GetBehaviorTree() const;
+
+	/** Component Collider use for the BeginOverlap */
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	class UBoxComponent *CollisionBox;
 	
 protected:
 	
@@ -29,5 +33,11 @@ protected:
 	/** Our Behaviour tree property that will handle the logic of your ai */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="AI", meta=(AllowPrivateAccess="true"))
 	UBehaviorTree* Tree;
+
+private:
+
 	
+	/** The function is launched if the actor has come into contact with another specific actor and subtract the number of life points and reload the game if needed */
+	UFUNCTION()
+	void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 };

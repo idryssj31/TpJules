@@ -14,7 +14,7 @@ public:
 	/** Constructor */
 	explicit UBTT_ChasePlayer(FObjectInitializer const& ObjectInitializer);
 
-	/** */
+	/** Task chase the player location */
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 	
 };
