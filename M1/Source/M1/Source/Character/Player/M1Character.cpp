@@ -75,7 +75,6 @@ AM1Character::AM1Character()
 	UE_LOG(LogTemp, Warning, TEXT("%d"), FoundActors.Num());
 
 	FoundGoldInScene();
-
 }
 
 void AM1Character::BeginPlay()
@@ -174,13 +173,14 @@ void AM1Character::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 
 void AM1Character::FellOutOfWorld(const UDamageType& dmgType)
 {
-	NbrHealth--;
-	TeleportTo(FVector(200,200,0), FRotator(0,0,0), false, false);
-	UE_LOG(LogTemp,Warning,TEXT("MyCharacter's Health is %d"), NbrHealth);
 	if(NbrHealth < 1 )
 	{
 		UGameplayStatics::OpenLevel(this, TEXT("/Content/ThirdPerson/Maps/ThirdPersonMap"), true);
 	}
+	
+	NbrHealth--;
+	TeleportTo(FVector(200,200,0), FRotator(0,0,0), false, false);
+	UE_LOG(LogTemp,Warning,TEXT("MyCharacter's Health is %d"), NbrHealth);
 
 	CAllHudSuppHearth();
 }

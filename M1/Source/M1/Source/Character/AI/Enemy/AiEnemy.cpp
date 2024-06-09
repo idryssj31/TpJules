@@ -8,11 +8,13 @@ AAiEnemy::AAiEnemy()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
+	
+	
 	// if collide call the fct...
 	CollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
 	CollisionBox->SetBoxExtent(FVector(38.f,38.f,38.f));
 	CollisionBox->SetCollisionProfileName("Trigger");
-
+	CollisionBox->SetupAttachment(RootComponent);
 	CollisionBox->OnComponentBeginOverlap.AddDynamic(this, &AAiEnemy::OnOverlapBegin);
 }
 
@@ -36,6 +38,7 @@ void AAiEnemy::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Other
 			player->NbrHealth--;
 			UE_LOG(LogTemp,Warning,TEXT("MyCharacter's Health is %d"), player->NbrHealth);
 			player->CAllHudSuppHearth();
+			player->TeleportTo(FVector(200,200,0), FRotator(0,0,0), false, false);
 		}	
 	}
 }

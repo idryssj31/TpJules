@@ -6,6 +6,9 @@
 #include "GameFramework/Actor.h"
 #include "AGold.generated.h"
 
+
+class AM1Character;
+
 UCLASS(config=Game)
 class M1_API AAGold : public AActor
 {
@@ -32,9 +35,15 @@ public:
 	/** Component Collider use for the BeginOverlap */
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	class UBoxComponent *CollisionBox;
+
+	/** Gives us access to our third person character */ 
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//class AM1Character *character;
+
+	AM1Character* Perso;
 	
 private:
-
+	
 	/** This actor will be considered in the perception system */
 	class UAIPerceptionStimuliSourceComponent* StimulusSource;
 	

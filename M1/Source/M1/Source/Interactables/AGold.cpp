@@ -30,6 +30,7 @@ AAGold::AAGold()
 void AAGold::BeginPlay()
 {
 	Super::BeginPlay();
+	Perso = Cast<AM1Character>(UGameplayStatics::GetPlayerCharacter(this,0));
 	
 }
 
@@ -55,7 +56,7 @@ void AAGold::SetupStimulusSource()
 void AAGold::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
                             int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if(auto* player = Cast<AM1Character>(OtherActor))
+	if(auto* player = Cast<class AM1Character>(OtherActor))
 	{
 		
 		UE_LOG(LogTemp,Warning,TEXT("Collide player"));
@@ -74,7 +75,8 @@ void AAGold::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 	{
 		GEngine->AddOnScreenDebugMessage(-1,1.f,FColor::Green, "Collide ai enemy");
 		Destroy();
-
+		Perso->NbrGoldInScene--;
+		Perso->CAllHudSuppGold();
 	}
 }
 
