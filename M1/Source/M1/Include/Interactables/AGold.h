@@ -37,9 +37,6 @@ public:
 	class UBoxComponent *CollisionBox;
 
 	/** Gives us access to our third person character */ 
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	//class AM1Character *character;
-
 	AM1Character* Perso;
 	
 private:

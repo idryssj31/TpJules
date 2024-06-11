@@ -77,6 +77,11 @@ void AAGold::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 		Destroy();
 		Perso->NbrGoldInScene--;
 		Perso->CAllHudSuppGold();
+		
+		if(Perso->NbrGoldInScene == 0)
+		{
+			UE_LOG(LogTemp,Warning,TEXT("Ai Wonn"));
+		}
 	}
 }
 
